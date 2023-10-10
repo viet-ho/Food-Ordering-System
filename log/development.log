@@ -1923,3 +1923,98 @@ Processing by EmployeesController#index as HTML
 Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 4369)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 10.240.4.100 at 2023-10-10 18:12:37 +0000
+Cannot render console from 10.240.4.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_cart'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 448)
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:27
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 787)
+  Rendered layout layouts/application.html.erb (Duration: 293.4ms | Allocations: 86255)
+Completed 200 OK in 325ms (Views: 297.5ms | ActiveRecord: 0.5ms | Allocations: 99559)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.js"):
+  
+Started GET "/home" for 10.240.4.100 at 2023-10-10 18:12:40 +0000
+Cannot render console from 10.240.4.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_cart'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:27
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 605)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2954)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3815)
+
+
+Started GET "/menu" for 10.240.4.100 at 2023-10-10 18:12:41 +0000
+Cannot render console from 10.240.4.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#menu as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_cart'
+  Rendering layout layouts/application.html.erb
+  Rendering main/menu.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/main/menu.html.erb:7
+  Rendered main/menu.html.erb within layouts/application (Duration: 8.4ms | Allocations: 5707)
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:27
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 607)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 8480)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.5ms | Allocations: 10239)
+
+
+Started GET "/promoitem" for 10.240.4.100 at 2023-10-10 18:12:41 +0000
+Cannot render console from 10.240.4.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#promo_item as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_cart'
+  Rendering layout layouts/application.html.erb
+  Rendering main/promo_item.html.erb within layouts/application
+  [1m[36mPromoItem Load (0.3ms)[0m  [1m[34mSELECT "promo_items".* FROM "promo_items"[0m
+  ↳ app/views/main/promo_item.html.erb:7
+  Rendered main/promo_item.html.erb within layouts/application (Duration: 1.7ms | Allocations: 874)
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:27
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 607)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3811)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 5141)
+
+
+Started GET "/contact" for 10.240.4.100 at 2023-10-10 18:12:42 +0000
+Cannot render console from 10.240.4.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#contact as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_cart'
+  Rendering layout layouts/application.html.erb
+  Rendering main/contact.html.erb within layouts/application
+  Rendered main/contact.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:27
+  Rendered shared/_navbar.html.erb (Duration: 3.8ms | Allocations: 605)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3047)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 3974)
+
+
+Started GET "/employees" for 10.240.4.100 at 2023-10-10 18:12:43 +0000
+Cannot render console from 10.240.4.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EmployeesController#index as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_cart'
+Filter chain halted as #<Proc:0x00007f6db528d960 /usr/local/rvm/gems/ruby-3.2.2/gems/actionpack-7.0.8/lib/action_controller/metal/http_authentication.rb:79> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms | Allocations: 815)
+
+
