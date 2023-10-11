@@ -8,7 +8,7 @@ It is about developing a web-based application to allow customers to look at the
 
 ## Quick Start Guide
 
-**Prerequisites**: Install `ruby`, `rails` and `postgresql` and on your system.
+**Prerequisites**: Install `ruby`, `rails` and `postgresql` on your system.
 
 ```bash
 git clone https://github.com/viet-ho/Food-Ordering-System.git
